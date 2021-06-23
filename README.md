@@ -22,6 +22,12 @@ The following **stretch** features are implemented:
 * [ ] Apply the popular [View Binding annotation library](http://guides.codepath.org/android/Reducing-View-Boilerplate-with-ViewBinding) to reduce boilerplate code.
 * [ ] Allow video trailers to be played in full-screen using the YouTubePlayerView from the details screen.
 
+
+The following **additional** features are implemented:
+
+* [X] Scrollable overviews in portrait mode.
+
+
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
@@ -33,6 +39,7 @@ GIF created with [Kap](https://getkap.co/).
 ## Notes
 
 * When adding rounded corners, poster and backdrop images moved irregularly (solved by changing height from wrap content to a fixed size).
+* Default placeholder isn´t noticible in walkthrough because of fast-loading images.
 
 ## Open-source libraries used
 
