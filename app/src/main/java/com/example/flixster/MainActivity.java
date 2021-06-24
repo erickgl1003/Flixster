@@ -28,7 +28,7 @@ import okhttp3.Headers;
 public class MainActivity extends AppCompatActivity {
 
     public static final String NOW_PLAYING_URL = "https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed";
-
+    public static final String API_KEY = "AIzaSyDYMdkYqdyFBhWaJGdcZ-_LA7atiEa5cD0";
 
     public static final String TAG = "MainActivity";
 
@@ -48,11 +48,6 @@ public class MainActivity extends AppCompatActivity {
 
         //Get recycler view
         RecyclerView rvMovies = binding.rvMovies;
-
-        /*
-        setContentView(R.layout.activity_main);
-        RecyclerView rvMovies = findViewById(R.id.rvMovies);
-        */
 
         movies = new ArrayList<>();
         //Create the adapter
