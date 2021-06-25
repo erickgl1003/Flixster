@@ -27,13 +27,15 @@ The following **additional** features are implemented:
 
 * [X] Scrollable overviews in portrait mode.
 * [X] Video directly shown in MovieDetailsActivity.
+* [X] Splash screen added.
+* [X] Simple logo added.
 
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://github.com/erickgl1003/Flixster/blob/master/FlixsterWalkthrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/erickgl1003/Flixster/blob/master/FlixsterWalkthrough2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [Kap](https://getkap.co/).
 
