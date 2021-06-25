@@ -43,6 +43,7 @@ public class MovieDetailsActivity extends YouTubeBaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        setTheme(R.style.Theme_Flixster);
         super.onCreate(savedInstanceState);
 
 
@@ -65,6 +66,8 @@ public class MovieDetailsActivity extends YouTubeBaseActivity {
         // set the title and overview
         tvTitle.setText(movie.getTitle());
         tvOverview.setText(movie.getOverview());
+
+
 
         // vote average is 0..10, so we convert to 0..5 by dividing by 2
         float voteAverage = movie.getVoteAverage().floatValue();

@@ -1,10 +1,12 @@
 package com.example.flixster;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.util.Log;
 import android.view.View;
 
@@ -34,12 +36,30 @@ public class MainActivity extends AppCompatActivity {
 
     List<Movie> movies;
 
+    ActivityMainBinding binding;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        setTheme(R.style.Theme_Flixster);
         super.onCreate(savedInstanceState);
+        /*
+        setContentView(R.layout.splash);
+        new CountDownTimer(5000,1000){
+            @Override
+            public void onTick(long millisUntilFinished) {
 
-        //Set binding from this activity
-        ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater());
+            }
+
+            @Override
+            public void onFinish() {
+                //Set binding from this activity
+                MainActivity.this.setContentView(R.layout.activity_main);
+            }
+        }.start();
+
+         */
+
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
 
         //Get view from binding
 
@@ -58,6 +78,9 @@ public class MainActivity extends AppCompatActivity {
 
         //Set a Layout Manager
         rvMovies.setLayoutManager(new LinearLayoutManager(this));
+
+        //Add separating line
+        rvMovies.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
 
         AsyncHttpClient client = new AsyncHttpClient();
         client.get(NOW_PLAYING_URL, new JsonHttpResponseHandler() {
